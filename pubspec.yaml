@@ -81,9 +81,13 @@ flutter:
     - assets/images/
     
 flutter_launcher_icons:
-  android: true
+  android: "launcher_icon"
   # ios: true
-  image_path: "assets/images/app_logo.png"  # Replace with the path to your app's icon
+  image_path: "assets/icons/launcher_icon.png"  # Replace with the path to your app's icon
+
+
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
