@@ -5,7 +5,6 @@ import 'package:just_audio/just_audio.dart';
 import 'package:soulofi/data/hive_database.dart';
 import 'package:soulofi/model/songs_adaptor.dart';
 import 'package:soulofi/screens/addtoplaylist.dart';
-import 'package:soulofi/screens/favourite_sceen.dart';
 
 class PlayScreen extends StatefulWidget {
   const PlayScreen({Key? key, required this.song, required this.allSongs})

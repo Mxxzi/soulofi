@@ -1,6 +1,5 @@
 // import 'dart:developer';
 
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
@@ -219,7 +218,7 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
             showDialog(
               context: context,
               builder: (BuildContext context) {
-                String newPlaylistName = '';
+             
 
                 return AlertDialog(
                   title: const Text(

@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:soulofi/screens/favourite_sceen.dart';
 import 'package:soulofi/screens/playlist.dart';
-import 'package:soulofi/screens/profile_screen.dart';
-import 'package:soulofi/screens/search_screen.dart';
 
-import '../homeScreen.dart';
 
 class LibraryScreen extends StatefulWidget {
   const LibraryScreen({super.key});
