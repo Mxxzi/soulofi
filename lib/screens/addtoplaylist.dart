@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:soulofi/model/songs_adaptor.dart';
 
 import '../data/database_instance.dart';
