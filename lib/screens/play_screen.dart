@@ -151,17 +151,6 @@ class _PlayScreenState extends State<PlayScreen> {
                   database
                       .addToFav(currentSong!)
                       .then((_) => checkLikedSong(currentSong!));
-                  // Navigator.of(context).pop();
-                  // Navigator.of(context).pop();
-                  // setState(() {
-                  //   Navigator.pushReplacement(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const FavouriteScreen(
-                  //               favoriteSongs: [],
-                  //             )),
-                  //   );
-                  // });
                 },
               ),
             )

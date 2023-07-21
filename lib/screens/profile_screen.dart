@@ -81,21 +81,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     },
                     child: imageXFile?.path != null
                         ?
-                        // ? CircleAvatar(
-                        //     child: Container(
-                        //       width: 100,
-                        //       height: 100,
-                        //       decoration: const BoxDecoration(
-                        //         shape: BoxShape.circle,
-                        //       ),
-                        //       child: ClipOval(
-                        //         child: Image.file(
-                        //           File(imageXFile!.path),
-                        //           fit: BoxFit.fill,
-                        //         ),
-                        //       ),
-                        //     ),
-                        //   )
                         CircleAvatar(
                             radius:
                                 50, // Set the desired radius for the circular avatar
@@ -108,7 +93,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 color: Colors
                                     .white, // Set the background color of the container
                                 shape:
-                                    CircleBorder(), // Use CircleBorder to create a circular shape
+                                    const CircleBorder(), // Use CircleBorder to create a circular shape
                                 shadows: [
                                   BoxShadow(
                                     color: Colors.grey.withOpacity(
@@ -145,7 +130,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 color: Colors
                                     .white, // Set the background color of the container
                                 shape:
-                                    CircleBorder(), // Use CircleBorder to create a circular shape
+                                    const CircleBorder(), // Use CircleBorder to create a circular shape
                                 shadows: [
                                   BoxShadow(
                                     color: Colors.grey.withOpacity(
