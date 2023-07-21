@@ -112,7 +112,9 @@ class _SongsListScreenState extends State<SongsListScreen> {
 
   fetchSongs() async {
     fetchingSongs = true;
-    localSongs = await _audioQuery.querySongs();
+    localSongs = await _audioQuery.querySongs(
+      sortType: SongSortType.TITLE,
+    );
     dbSongs = localSongs
         .map((e) => Songs(
             title: e.title,

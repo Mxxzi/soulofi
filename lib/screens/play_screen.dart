@@ -73,16 +73,24 @@ class _PlayScreenState extends State<PlayScreen> {
 
   next(Songs song) {
     int currentPosition = widget.allSongs.indexOf(song);
-    Songs nextSong = widget.allSongs[currentPosition + 1];
     audioPlayer.stop();
-    setUrl(nextSong);
+    if (widget.allSongs.last == song) {
+      setUrl(widget.allSongs.first);
+    } else {
+      Songs nextSong = widget.allSongs[currentPosition + 1];
+      setUrl(nextSong);
+    }
   }
 
   previous(Songs song) {
     int currentPosition = widget.allSongs.indexOf(song);
-    Songs preSong = widget.allSongs[currentPosition - 1];
     audioPlayer.stop();
-    setUrl(preSong);
+    if (widget.allSongs.first == song) {
+      setUrl(widget.allSongs.last);
+    } else {
+      Songs preSong = widget.allSongs[currentPosition - 1];
+      setUrl(preSong);
+    }
   }
 
   bool isLiked = false;
